@@ -1,0 +1,171 @@
+
+.header{
+    font-size:1rem;
+    color: #fc3633;
+    background-color: #b6d6ff;
+    padding: 10px 10px 10px 10px;
+}
+.header span{
+    width: 12px;
+    height: 12px;
+    background: url("../images/close.png") no-repeat center;
+    position: relative;
+    top: 2px;
+}
+.content{
+    padding: 20px 10px 0 10px;
+}
+.content-title{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.content .first{
+    overflow: hidden;
+}
+.content .first ul{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.content .first ul li{
+    width: 33%;
+    height: 140px;
+    float: left;
+    margin: 1px 1px 0 0;
+    background-color: #f1f1f1;
+
+}
+.content .data{
+    text-align: center;
+
+}
+.content .data .top{
+    padding: 35px 0 5px 0;
+}
+.content .data .bottom{
+    font-size:0.8rem ;
+}
+.content .data .bottom span{
+    display: block;
+    text-align: center;
+}
+.content .data .bottom span img{
+    position: relative;
+    left: -3px;
+}
+.col1{
+    color: #feb300;
+}
+.col2{
+    color:#8ed843
+}
+.col3{
+    color: #17d0a4;
+}
+.content .second .up{
+    /*overflow: hidden;*/
+}
+.content .second{
+    overflow: hidden;
+    padding: 0 0 12px 0;
+    margin: 0 0 15px 0;
+    border-bottom: 1px dashed #a4a4a4;
+    position: relative;
+}
+.content .second .left{
+    overflow: hidden;
+    width: 85%;
+}
+.content .second .left ul{
+    width: 100%;
+    font-size: 0.8rem;
+}
+.content .second .left ul li{
+    width: 14%;
+    margin-left: 18%;
+}
+.content .second .left ul li div{
+    text-align: center;
+    color: white;
+    padding: 33% 0 33% 0;
+    border-radius: 2px;
+
+}
+.content .second .left ul li span{
+    display: block;
+    text-align: center;
+    color: #777;
+    margin: 2px 0 0 0;
+}
+.content .second .left ul li.up div{
+    background-color: #2d7ee7;
+}
+.content .second .left ul li.stop div{
+    background-color: #e5e5e5;
+}
+.content .second .left ul li.down div{
+    background-color: #17d0a4;
+}
+.content .second .right{
+    font-size: 0.8rem;
+    width: 15%;
+    float: right;
+}
+.content .second .right div{
+    width: 3rem;
+    text-align: center;
+    height: 3rem;
+    border-radius: 50%;
+    float: right;
+    line-height: 3rem;
+}
+.content .second .right div.active{
+    color: white;
+    background-color: #2d7ee7;
+}
+.content .second .right div.manual{
+    margin-top: 0;
+}
+.content .second .right div{
+    color: #333;
+    background-color: #e5e5e5;
+    margin-top: 10px;
+}
+.last-bottom{
+    font-size: 1.2rem;
+    padding:8px 10px;
+    margin-bottom: 15px;
+    background-color: #e5e5e5;
+}
+.last-bottom img{
+    position: relative;
+    top: 2px;
+}
+/*参数部分css代码*/
+.content .second .left p{
+    color: #333;
+    padding: 0 0 0 20%;
+}
+.content .second .left p span{
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #999;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+/*定时部分css代码*/
+.content .second .left p.timing{
+    color: #333;
+    text-align: center;
+    padding: 0;
+}
+.content .second .left p.timing span{
+    width:40px;
+    height: 2px;
+    background-color: #96bef2;
+    display: inline-block;
+    border-radius: 0;
+    margin: 0 15px 5px 15px;
+}

@@ -1,0 +1,91 @@
+*{
+    padding:0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 25.6px !important;
+    }
+}
+i.em{
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+a{
+    text-decoration:none;
+}
+ul,li{
+    list-style: none;
+    float: left;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+html,body{
+    font:16px "微软雅黑","宋体","Arial Narrow",HELVETICA;
+}
+.title{
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    background-color: #2d7ee7;
+    padding: 12px 0 12px 0;
+}
+.title img{
+    position: relative;
+    left: 11px;
+    top: 3px;
+}
+.title img.setting{
+    position: relative;
+    left: -9px;
+    top: 4px;
+}
+.title .btn{
+    font-size:1rem;
+    color:#fff;
+    font-family: "微软雅黑";
+    padding:12px 10px 12px 0;
+}
+.btn{
+    border:none;
+    background:none;
+    outline:none;
+}
+.fancybox-close{
+    display: none;
+}
+.fancybox-inner{
+    overflow: hidden !important;
+}
+/*提示弹窗样式*/
+.obstacle{
+    position: relative;
+    width: 100%;
+}
+.prompt{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background-color: rgba(50,50,50,0.8);
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+    z-index: 9999;
+}

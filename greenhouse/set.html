@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大棚设置</title>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/ionic.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/dialog-box.css">
+    <link rel="stylesheet" href="css/set.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+</head>
+<body>
+    <div class="greenhouse">
+        <div class="title">
+            <a href="greenhouse.html"><img src="images/arrow_left.png" alt="" class="fl" ></a>
+            大棚设置
+            <button class="btn fr">保存</button>
+        </div>
+        <div class="content">
+            <div class="content-title">
+                <span class="name fl">大棚名称</span>
+                <span class="name-con fl">辽宁大棚A12</span>
+                <a href="#" class="fr"><img src="images/img/next.png" id="name"></a>
+            </div>
+            <!--导航栏-->
+            <ui class="content-nav">
+                <li class="nav-item first active">卷被</li>
+                <li class="nav-item">上通风</li>
+                <li class="nav-item">下通风</li>
+                <li class="nav-item last">灌溉</li>
+            </ui>
+            <!--卷被-->
+            <div class="content-detail" >
+                <div class="detail1">
+                    <h3 class="illumination">光照强度(LUX)</h3>
+                    <p class="keyword" >
+                        <i class="openword fl">启动值</i>
+                        <input class="ranges" type="range" min="1000" max="30000" step="1" value="5432">
+                        <span><i>1000</i><input class="value" type="text" value="5432" style="width:60%;"><i>30000</i></span>
+                    </p>
+                    <p class="keyword">
+                        <i class="closeword fl">关闭值</i>
+                        <input class="ranges" type="range" min="1000" max="30000" step="1" value="5432">
+                        <span><i>1000</i><input class="value" type="text" value="5432" style="width:60%;"><i>30000</i></span>
+                    </p>
+                </div>
+                <div class="detail2">
+                    <h3 class="control">时段控制<button id="volume-add" id="volume-add" class="btn fr">添加</button></h3>
+                    <table class="control-table">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>启动时间</th>
+                            <th>结束时间</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>9:30</td>
+                            <td>16:30</td>
+                            <td><a class="delete" href="#">删除</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--上通风-->
+            <div class="content-detail " >
+                <div class="detail1">
+                    <h3 class="temperature">空气温度(℃)</h3>
+                    <p class="keyword" >
+                        <i class="openword fl">启动值</i>
+                        <input  class="ranges" type="range" min="0" max="75" step="1" value="26">
+                        <span><i>0</i><input class="value" type="text" value="26"><i>75</i></span>
+                    </p>
+                    <p class="keyword">
+                        <i class="closeword fl">关闭值</i>
+                        <input  type="range" min="0" max="75" step="1" value="22">
+                        <span><i>0</i><input class="value" type="text" value="22"><i>75</i></span>
+                    </p>
+                </div>
+                <div class="detail2">
+                    <h3 class="control">时段控制<button id="Upventilation-add" class="btn fr">添加</button></h3>
+                    <table class="control-table">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>启动时间</th>
+                            <th>结束时间</th>
+                            <th>工作目标</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>9:30</td>
+                            <td>16:30</td>
+                            <td>三分之二</td>
+                            <td><a class="delete" href="#">删除</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--下通风-->
+            <div class="content-detail" >
+                <div class="detail1">
+                    <h3 class="temperature2">空气温度(℃)</h3>
+                    <p class="keyword" >
+                        <i class="openword fl">启动值</i>
+                        <input  class="ranges" type="range" min="0" max="75" step="1" value="30">
+                        <span><i>0</i><input class="value" type="text" value="30"><i>75</i></span>
+                    </p>
+                    <p class="keyword">
+                        <i class="closeword fl">关闭值</i>
+                        <input type="range" min="0" max="75" step="1" value="30">
+                        <span><i>0</i><input class="value" type="text" value="30"><i>75</i></span>
+                    </p>
+                </div>
+                <div class="detail2">
+                    <h3 class="control">时段控制<button id="Lowventilation-add" class="btn fr">添加</button></h3>
+                    <table class="control-table">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>启动时间</th>
+                            <th>结束时间</th>
+                            <th>工作目标</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>9:30</td>
+                            <td>16:30</td>
+                            <td>三分之二</td>
+                            <td><a class="delete" href="#">删除</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--灌溉-->
+            <div class="content-detail" >
+                <div class="detail1">
+                    <h3 class="moisture">土壤水分(%)</h3>
+                    <p class="keyword" >
+                        <i class="openword fl">启动值</i>
+                        <input  type="range" min="0" max="100" step="1" value="30">
+                        <span><i>0</i><input class="value" type="text" value="30" style="width:82%;"><i>100</i></span>
+                    </p>
+                    <p class="keyword">
+                        <i class="closeword fl">关闭值</i>
+                        <input type="range" min="5" max="60" step="1" value="10">
+                        <span><i>5</i><input class="value" type="text" value="10"><i>60</i></span>
+                    </p>
+                </div>
+                <div class="detail2">
+                    <h3 class="control">时段控制<button id="irrigate-add" class="btn fr">添加</button></h3>
+                    <table class="control-table">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>启动时间</th>
+                            <th>结束时间</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>9:30</td>
+                            <td>16:30</td>
+                            <td><a class="delete" href="#">删除</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/fancybox/jquery.fancybox.js"></script>
+<script>
+    $(function(){
+        //tab切换
+        $(".content-detail").hide().eq(0).show();
+        $(".nav-item").click(function(){
+            var currIndex = $(".nav-item").index(this);
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".content-detail").hide().eq(currIndex).show();
+        })
+    })
+    //滑动模块滑动功能
+    var elems = document.querySelectorAll('input[type="range"]');
+    var targets = document.querySelectorAll('.value');
+    for(var i=0;i<elems.length;i++){
+        elems[i].index=i;
+        var rangeValue = function(){
+            var newValue=elems[this.index].value;
+            targets[this.index].value = newValue;
+        }
+        elems[i].addEventListener("input", rangeValue);
+    };
+    //输入新大棚名称弹窗
+    $("#name").fancybox( {
+        'width':'80%',
+        'height':'250px',
+        'autoScale':false,
+        'transitionIn':'none',
+        'transitionOut':'none',
+        'type':'iframe',
+        'href':'dialogbox/dialog-name.html'
+    })
+    //卷被页面弹窗
+    $("#volume-add").fancybox( {
+        'width':'80%',
+        'height':'250px',
+        'autoScale':false,
+        'transitionIn':'none',
+        'transitionOut':'none',
+        'type':'iframe',
+        'href':'dialogbox/dialog-volume.html'
+    })
+    //上通风页面弹窗
+    $("#Upventilation-add").fancybox( {
+        'width':'80%',
+        'height':'250px',
+        'autoScale':false,
+        'transitionIn':'none',
+        'transitionOut':'none',
+        'type':'iframe',
+        'href':'dialogbox/dialog-Upventilation.html'
+    })
+    //下通风页面弹窗
+    $("#Lowventilation-add").fancybox( {
+
+        'width':'80%',
+        'height':'250px',
+        'autoScale':false,
+        'transitionIn':'none',
+        'transitionOut':'none',
+        'type':'iframe',
+        'href':'dialogbox/dialog-Lowventilation.html'
+    })
+    //灌溉页面弹窗
+    $("#irrigate-add").fancybox( {
+        'width':'80%',
+        'height':'250px',
+        'autoScale':false,
+        'transitionIn':'none',
+        'transitionOut':'none',
+        'type':'iframe',
+        'href':'dialogbox/dialog-irrigate.html'
+    })
+</script>
+</body>
+</html>

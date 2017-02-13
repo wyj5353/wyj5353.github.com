@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" href="../css/dialog-box.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/datetime/mobiscroll_002.js"></script>
+    <script src="../js/datetime/mobiscroll_004.js"></script>
+    <link rel="stylesheet" href="../js/datetime/mobiscroll_002.css"  >
+    <link rel="stylesheet" href="../js/datetime/mobiscroll.css"  >
+    <script src="../js/datetime/mobiscroll.js" ></script>
+    <script src="../js/datetime/mobiscroll_003.js"></script>
+    <script src="../js/datetime/mobiscroll_005.js" ></script>
+    <link rel="stylesheet" href="../js/datetime/mobiscroll_003.css" >
+    <link rel="stylesheet" href="../css/dialog-box.css">
+</head>
+<body>
+<div class="dialog-title">
+    时段设置
+</div>
+<div class="dialog-content setting">
+    <div>
+        <label for="appTime"><span>开始时间</span></label>
+        <input value="" class="" readonly="readonly" name="appTime" id="appTime" type="text">
+    </div>
+    <div>
+        <label for="appTime1"><span>结束时间</span></label>
+        <input value="" class="" readonly="readonly" name="appTime" id="appTime1" type="text">
+    </div>
+    <div>
+        <span>工作目标</span>
+        <select style="text-align:center;">
+            <option selected="selected">三分之一</option>
+            <option>三分之二</option>
+            <option>百分之百</option>
+        </select>
+    </div>
+</div>
+<div class="dialog-bottom">
+    <button class="sure">确定</button>
+    <button class="cancel">取消</button>
+</div>
+<script src="../js/fancybox/jquery.fancybox.js"></script>
+<script src="../js/datetime.js"></script>
+<script>
+    $(".cancel").click(function(){
+        parent.$.fancybox.close();
+    })
+</script>
+</body>
+</html>

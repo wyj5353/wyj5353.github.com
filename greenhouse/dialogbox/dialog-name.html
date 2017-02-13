@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/dialog-box.css">
+</head>
+<body>
+<div class="dialog-title">
+    大棚名称
+</div>
+<div class="dialog-content add-name">
+    <div>
+        <span>请输入新名称</span>
+        <input type="text">
+    </div>
+</div>
+<div class="dialog-bottom">
+    <button class="sure">确定</button>
+    <button class="cancel">取消</button>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/fancybox/jquery.fancybox.js"></script>
+<script>
+    $(".cancel").click(function(){
+        parent.$.fancybox.close();
+    })
+</script>
+</body>
+</html>

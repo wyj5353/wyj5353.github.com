@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/dialog-box.css">
+</head>
+<body>
+<div class="dialog-title">
+    传感器设置
+</div>
+
+<div class="dialog-content">
+    <div>
+        <span>上限</span>
+        <input type="number">
+    </div>
+    <div>
+        <span>下限</span>
+        <input type="number">
+    </div>
+    <div>
+        <span>名称</span>
+        <input type="text">
+    </div>
+</div>
+<div class="dialog-bottom">
+    <button class="sure">确定</button>
+    <button class="cancel">取消</button>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/fancybox/jquery.fancybox.js"></script>
+<script>
+    $(".cancel").click(function(){
+        parent.$.fancybox.close();
+    })
+    $(function () {
+        $(".fancybox-overlay",window.parent.document).on("click",function () {
+            $(".prompt",window.parent.document).css("display","none");
+        });
+        $(".sure").on("click",function () {
+            var i = 0;
+            $(".fancybox-wrap",window.parent.document).css("display","none");
+            $(".prompt",window.parent.document).css("display","block");
+            setInterval(function () {
+                i++;
+                if(i >= 3){
+                    $(".fancybox-overlay",window.parent.document).css("display","none");
+                    $(".prompt",window.parent.document).css("display","none");
+                }
+            },1000)
+        })
+    })
+
+</script>
+</body>
+</html>
